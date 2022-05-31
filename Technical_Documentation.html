@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Technical Documentation Page </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            background-color:#ffffff;
+            color: #454545;
+            font-family:'Open Sans', Arial, sans-serif;
+            line-height: 1.5;
+            text-align: justify;
+            font-size: 14px;
+            
+            }
+            body{
+                display:grid;
+                grid-template-columns: 20% 80%;
+    
+            }
+
+        #navbar{
+           
+            position: fixed;
+            width: 220px;
+            height: 100%;
+            font-weight: bold;
+            margin-left: -30px; 
+            border-right: 5px solid #454545;
+            
+        }
+        #hamburger{
+            display:none;
+        }
+        #cancel_hamburger{
+            display :none;
+        }
+        #topic{
+            padding-left: 40px;
+        }
+        ul{
+            list-style-type: none;  
+        }
+         .nav-link{
+            text-decoration: none;
+            border: 2px solid #454545;
+            display: block;
+            margin: 20px 10px 10px;
+            font-size: 16px;
+            padding:25px 20px 25px 5px;
+            cursor: pointer;
+            overflow: hidden;
+        } 
+        a:hover{
+            background-color: #454545;
+            color: white;
+        }
+        #main-doc{
+            width:95%;
+            margin:auto;
+        }
+        header{
+            text-transform:uppercase;
+            font-size: 20px;
+        }
+        p ul li{
+            list-style-type:circle;
+        }
+            
+        
+        @media (max-width:1000px) {  
+           #main-doc{
+               width: 80%;
+               margin: auto;
+               padding-left: 30px;
+           } 
+        }
+        @media (min-width:721px) {
+            #navbar{
+                display:block !important;
+            }
+            #main-doc{
+                margin:auto !important;
+                padding-left:30px !important;
+            }
+            #cancel_hamburger{
+                display: none !important;
+            }
+        }
+         @media (max-width:720px) {  
+            body{
+                display:flex;
+            }
+            #main-doc{
+                width:85%;
+            }
+           #hamburger{
+              display:flex;
+              margin:auto;
+              padding-left: 5px;
+              position: fixed;
+              cursor: pointer;
+           } 
+           #cancel_hamburger{
+               display:flex;
+               cursor: pointer;
+           }
+           #navbar{
+               display:none;
+           }
+           
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="navbar_hamburger">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIh2umai0wzDLthQ4FinJUHLYXGV60Yr-tg&usqp=CAU" alt="" id="hamburger" width="30px" >
+        </div>
+        
+        <nav id="navbar">
+            <header id="topic">Programming Languages</header> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHQ7EUR7yIU74ellgt2ZRker0dwi5DzTojEw&usqp=CAU" alt="" width="17x" id="cancel_hamburger" style="padding-left:180px;">
+            <ul>
+                <li><a href="#Introduction_to_Programming" class="nav-link">Introduction</a></li>
+                <li><a href="#Javascript" class="nav-link">Javascript</a></li>
+                <li><a href="#Python" class="nav-link">Python</a></li>
+                <li><a href="#Java" class="nav-link">Java</a></li>
+                <li><a href="#C++" class="nav-link">C++</a></li>
+            </ul>
+        </nav>
+    </div>
+     
+    <main id="main-doc">
+        
+        <!-- Introduction -->
+        <section class="main-section" id="Introduction_to_Programming">
+           <header style="font-size:17px; font-weight: bolder; ">Introduction to Programming</header>
+           <p>
+                Programming is writing computer code to create program, to solve a problem. Programs are created to implement algorithms. algorithms can be represented as pseudocode oe a flowchart, and programming is the translation of these into a computer program. 
+           </p>
+           <p>
+                <em>There are four types of programming languages which include</em>
+                <ul style="list-style-type: circle;">
+                    <li>Procedural programming languages</li>
+                    <li>Functional programming languages</li>
+                    <li>Logic programming languages</li>
+                    <li>Object Oriented programming languages</li>
+                </ul>
+           </p>
+       </section>
+
+        
+        <section class="main-section" id="Javascript" >
+            <header style="font-size:17px; font-weight: bolder; "> Javascript</header>
+            <article>
+                <p>
+                   Javascript is a computer programming language used by programmers across the world to create dynamic and interactive web content like applications and browsers. 
+                </p>
+                <p>
+                    Javascript is so popular that it's the most used programming languages in the world, used as a client-side programming language by 97% of all websites.
+                </p>
+                <code>
+
+                </code>
+            </article>
+       </section>
+
+       
+        <section class="main-section" id="Python">
+            <header style="font-size:17px; font-weight: bolder; ">Python</header>
+            <article>
+                <p>
+                Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. They are used in field like web and app development, data science, machine learning and AI.
+                </p>
+                <p>
+                Python is a general purpose language, meaning it can be used to create variety of different programs and isn't specialized for any specific problems
+                </p>
+            </article>
+        </section>
+
+        
+        <section class="main-section" id="Java">
+           <header style="font-size:17px; font-weight: bolder; ">Java</header>
+            <article>
+                <p>
+                    Java is a high level, class-based, object-oriented programming language that is designed to have a few implementation dependencies as possible
+                </p>
+                <p>
+                    Java is used to write applications for different platforms that JRE and supports applications that run on a single device like a mobile phone and desktop. Java can also be used to develop applications that work in a distributed manner
+                </p>
+            </article>
+        </section>
+
+        
+        <section class="main-section" id="C++">
+          <header style="font-size:17px; font-weight: bolder; ">C++</header>
+            <article>    
+                <p>
+                   C++ is a powerful general-purpose programming language which is used for game programming, software engineering, data structures, developing browsers, operating systems and applications
+                </p>
+                <p>
+                    C++ supports different ways of Programming like procedural, object-oriented, functional.This makes it powerful as well flexible. It can be used to develop operating systems, browsers, games, and so on. 
+                </p>
+            </article>
+        </section>
+    </main>
+        <script>
+            const hamburger=document.getElementById("hamburger")
+            const nav=document.getElementById("navbar")
+            const main=document.getElementById("main-doc")
+            const cancel=document.getElementById("cancel_hamburger")
+            
+            hamburger.addEventListener("click", ()=>{
+               nav.style.display="block";
+               main.style.paddingLeft='210px'
+               main.style.paddingRight='10px'
+                cancel.style.display="block"
+            })
+            cancel.addEventListener('click', ()=>{
+                nav.style.display="none"
+                main.style.paddingLeft='40px'
+               main.style.paddingRight='10px'
+               main.style.margin='auto'
+            })
+        </script>
+
+</body>
+</html>
